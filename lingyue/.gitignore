@@ -11,7 +11,6 @@ build/
 .pub/
 
 # Android
-*.apk
 *.ap_
 *.aab
 android/app/build/
