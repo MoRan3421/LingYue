@@ -1,0 +1,42 @@
+{
+  "total_survivors": 108,
+  "matrix_version": "1.0-ORIGIN",
+  "heroes": [
+    {
+      "id": 1,
+      "name": "灵动行者",
+      "title": "始源第一人",
+      "class": "战神",
+      "difficulty": 3,
+      "passive": "因果共鸣: 每次释放技能获得 2 点业力。",
+      "aura_resonance": 0.99
+    },
+    {
+      "id": 2,
+      "name": "紫霄仙子",
+      "title": "电磁主宰",
+      "class": "法神",
+      "difficulty": 5,
+      "passive": "雷霆契约: 技能有 20% 几率触发连闪。",
+      "aura_resonance": 0.98
+    },
+    {
+      "id": 3,
+      "name": "巨阙守卫",
+      "title": "不灭之盾",
+      "class": "坦神",
+      "difficulty": 2,
+      "passive": "磐石之志: 受到伤害时减少 10% 物理损耗。",
+      "aura_resonance": 0.97
+    },
+    {
+      "id": 7,
+      "name": "墨染山河",
+      "title": "幻墨师",
+      "class": "辅神",
+      "difficulty": 4,
+      "passive": "画笔生风: 移动速度提升 15%。",
+      "aura_resonance": 0.995
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+name: Sovereign CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-portal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build Portal
+        working-directory: ./ling-yue-landing
+        run: |
+          npm install
+          npm run build
+
+  build-native:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build Native Client
+        working-directory: ./lingyue_native
+        run: |
+          flutter pub get
+          flutter build windows
+
+  build-engine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Compile C Core
+        working-directory: ./lingyue_engine
+        run: gcc -shared -o lingyue_core.so lingyue_core.c

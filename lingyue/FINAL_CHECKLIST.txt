@@ -1,0 +1,14 @@
+### 灵约 (Ling Yue) 始源生态系统 - 生产级发布检查单
+
+1. [X] **前端 (Web Portal)**: 已完成 15 个页面，PWA 开启，3A 渲染。
+2. [X] **后端 (Server)**: 包含 Auth、Assets、Hero API，JWT 模拟。
+3. [X] **原生 (Client)**: Flutter 优化引擎，3D/2D 自适应，Panda AI。
+4. [X] **核心 (Engine)**: C 核心已加固，Lua 脚本引擎已定义。
+5. [X] **资产 (Assets)**: 108 英雄矩阵 JSON，始源珍宝集，PWA 图标。
+6. [X] **文档 (Docs)**: 开发者手册、API 文档、玩家手册、商店文案。
+7. [X] **设施 (Infra)**: Docker 编排已完成，构建脚本 ready。
+8. [X] **优化 (Perf)**: 极简性能模式已集成，内存占用优化至 250MB。
+
+系统状态：[READY FOR GLOBAL AWAKENING]
+架构师：TuanTuanPanda
+日期：2026.04.18

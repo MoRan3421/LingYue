@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/hero.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>灵约 (Ling Yue) | 不朽始源 - 全马首款赛博仙侠 MOBA</title>
+    <meta name="description" content="《灵约：不朽始源》是专为全年龄段 (4+) 打造的高清赛博仙侠 MOBA 游戏。极致 256MB RAM 优化，全球同步对战。立即进入分发枢纽，开始你的不朽之旅。" />
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="/hero.png" as="image" />
+    
+    <!-- Global Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Outfit:wght@900&display=swap" rel="stylesheet" />
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    
+    <style>
+      #root-loader {
+        position: fixed;
+        inset: 0;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        flex-direction: column;
+      }
+      .loader-circle {
+        width: 100px;
+        height: 100px;
+        border: 2px solid rgba(251, 191, 36, 0.1);
+        border-top: 2px solid #fbbf24;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+      .loader-text {
+        color: #fbbf24;
+        margin-top: 30px;
+        font-family: 'Outfit', sans-serif;
+        letter-spacing: 10px;
+        font-size: 0.8rem;
+        opacity: 0.5;
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+    </style>
+  </head>
+  <body>
+    <div id="root-loader">
+      <div class="loader-circle"></div>
+      <div class="loader-text">INITIALIZING MATRIX...</div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      window.addEventListener('load', () => {
+        const loader = document.getElementById('root-loader');
+        setTimeout(() => {
+          loader.style.opacity = '0';
+          setTimeout(() => loader.remove(), 500);
+        }, 800);
+      });
+    </script>
+  </body>
+</html>

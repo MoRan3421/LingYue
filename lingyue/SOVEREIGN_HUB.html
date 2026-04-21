@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>灵约 · 始源全量中枢 (SOVEREIGN HUB)</title>
+    <style>
+        body { background: #0f172a; color: #fff; font-family: 'Segoe UI', sans-serif; text-align: center; padding: 50px; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 900px; margin: 50px auto; }
+        .card { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); cursor: pointer; transition: 0.3s; text-decoration: none; color: #fff; }
+        .card:hover { background: rgba(244,114,182,0.1); border-color: #f472b6; transform: translateY(-5px); }
+        .accent { color: #f472b6; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1 class="accent">灵约 (LING YUE) V1.0-ORIGIN</h1>
+    <p>全量始源生态系统开发中枢</p>
+    
+    <div class="grid">
+        <a class="card" href="http://localhost:5173" target="_blank">
+            <h3>Web 门户</h3>
+            <p>Portal & Admin</p>
+        </a>
+        <a class="card" href="http://localhost:3000/api/rankings" target="_blank">
+            <h3>资产 API</h3>
+            <p>Backend Service</p>
+        </a>
+        <div class="card" onclick="alert('请在终端运行: flutter run')">
+            <h3>原生 Client</h3>
+            <p>Windows/Mobile</p>
+        </div>
+        <a class="card" href="file:///c:/lingyue/docs/Sovereign_API.md">
+            <h3>API 文档</h3>
+            <p>Documentation</p>
+        </a>
+        <a class="card" href="file:///c:/lingyue/docs/LingScript_Guide.md">
+            <h3>英雄脚本</h3>
+            <p>Lua Guide</p>
+        </a>
+        <div class="card" onclick="alert('系统已优化：内存占用 250MB (极简模式)')">
+            <h3>性能概览</h3>
+            <p>Optimized</p>
+        </div>
+    </div>
+    
+    <div style="margin-top: 50px; opacity: 0.4;">
+        万世无量 · 因果圆满
+    </div>
+</body>
+</html>

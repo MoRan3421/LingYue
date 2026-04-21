@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  # 1. Sovereign Backend
+  backend:
+    build: ./lingyue_server
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+
+  # 2. Ling Yue Portal
+  portal:
+    build: ./ling-yue-landing
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+  # 3. AURA Calculation Proxy (Logic)
+  aura-engine:
+    image: gcc:latest
+    volumes:
+      - ./lingyue_engine:/app
+    working_dir: /app
+    command: tail -f /dev/null # Placeholder for CI/CD compilation
